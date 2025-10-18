@@ -22,6 +22,7 @@
                 @auth
                 <a href="{{ route('colaboradores') }}" class="hover:text-gray-300 {{ request()->routeIs('colaboradores') ? 'text-blue-400 font-bold' : '' }}">Colaboradores</a>
                 <a href="{{ route('cargos') }}" class="hover:text-gray-300 {{ request()->routeIs('cargos') ? 'text-blue-400 font-bold' : '' }}">Cargos</a>
+                <a href="{{ route('Professor') }}" class="hover:text-gray-300 {{ request()->routeIs('cargos') ? 'text-blue-400 font-bold' : '' }}">Professor</a>
                 <a href="{{ route('profile') }}" class="hover:text-gray-300 {{ request()->routeIs('profile') ? 'text-blue-400 font-bold' : '' }}">
                     Perfil
                 </a>
