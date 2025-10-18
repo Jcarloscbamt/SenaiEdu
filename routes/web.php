@@ -6,12 +6,15 @@ use App\Livewire\Home;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Professor;
 
 //Meu primeiro contato com GitHub
 
 // oi
 
 Route::get('/', Home::class)->name('home');
+
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -35,5 +38,9 @@ Route::get('/colaboradores', Colaborador::class)
 Route::get('/cargos', ColaboradorCargo::class)
     ->middleware('auth')
     ->name('cargos');
+
+Route::get('/professor', Professor::class)
+    //->middleware('auth')
+    ->name('Professor');
 
 require __DIR__.'/auth.php';
