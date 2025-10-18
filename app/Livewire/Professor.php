@@ -8,6 +8,6 @@ class Professor extends Component
 {
     public function render()
     {
-        return view('livewire.professor');
+        return view('livewire.professor')->layout('layouts.app');
     }
 }
