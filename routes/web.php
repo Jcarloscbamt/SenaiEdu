@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 //Meu primeiro contato com GitHub
 
-
+// joao victor
 Route::get('/', Home::class)->name('home');
 
 Route::view('dashboard', 'dashboard')
