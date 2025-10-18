@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 //Meu primeiro contato com GitHub
+//Teste 2
 
 
 Route::get('/', Home::class)->name('home');
