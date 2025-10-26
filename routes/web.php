@@ -31,6 +31,7 @@ Route::post('/logout', function (Request $request) {
     return redirect('/');
 })->name('logout');
 
+
 Route::get('/colaboradores', Colaborador::class)
     ->middleware('auth')
     ->name('colaboradores');
@@ -40,7 +41,7 @@ Route::get('/cargos', ColaboradorCargo::class)
     ->name('cargos');
 
 Route::get('/professor', Professor::class)
-    //->middleware('auth')
-    ->name('Professor');
+    ->middleware('auth')
+    ->name('professor');
 
 require __DIR__.'/auth.php';
