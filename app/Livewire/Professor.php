@@ -92,7 +92,7 @@ class Professor extends Component
     {
         $this->validate([
             'nome' => 'required|string|max:255',
-            'cpf' => 'required|string|max:255',
+            'cpf' => 'required|string|max:11',
             'email' => 'required|email|unique:colaboradors,email,' . $this->colaborador_id,
             'telefone' => 'nullable|string|max:20',
             'data_nascimento' => 'required|string|max:255',
