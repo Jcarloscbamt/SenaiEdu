@@ -23,6 +23,7 @@
                 <div>
             <input type="text"
                    wire:model="cpf"
+                   maxlength="11"
                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 @error('nome') border-red-500 @enderror"
                    placeholder="Cpf">
             @error('nome') 
@@ -43,6 +44,7 @@
         <div>
             <input type="text"
                    wire:model="telefone"
+                   maxlength="11"
                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 @error('telefone') border-red-500 @enderror"
                    placeholder="Telefone">
             @error('telefone') 
@@ -53,6 +55,7 @@
         <div>
             <input type="text"
                    wire:model="data_nascimento"
+                   maxlength="08"
                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 @error('nome') border-red-500 @enderror"
                    placeholder="Data Nascimento">
             @error('data_nascimento') 
