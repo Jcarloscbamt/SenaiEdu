@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Professor;
+Use App\Livewire\Feriados;
 
 //Meu primeiro contato com GitHub
 
@@ -43,5 +44,10 @@ Route::get('/cargos', ColaboradorCargo::class)
 Route::get('/professor', Professor::class)
     ->middleware('auth')
     ->name('professor');
+
+    Route::get('/feriados', Feriados::class)
+    ->middleware('auth')
+    ->name('feriados');
+
 
 require __DIR__.'/auth.php';
