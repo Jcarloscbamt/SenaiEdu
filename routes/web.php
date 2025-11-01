@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Professor;
 Use App\Livewire\Feriados;
-
+ use App\Livewire\Turma;
 //Meu primeiro contato com GitHub
 
 // oi
@@ -48,6 +48,11 @@ Route::get('/professor', Professor::class)
     Route::get('/feriados', Feriados::class)
     ->middleware('auth')
     ->name('feriados');
+
+  Route::get('/turma', Turma::class)
+    ->middleware('auth')
+    ->name('turma');
+
 
 
 require __DIR__.'/auth.php';

@@ -24,7 +24,10 @@
                 <a href="{{ route('cargos') }}" class="hover:text-gray-300 {{ request()->routeIs('cargos') ? 'text-blue-400 font-bold' : '' }}">Cargos</a>
                 <a href="{{ route('professor') }}" class="hover:text-gray-300 {{ request()->routeIs('professor') ? 'text-blue-400 font-bold' : '' }}">Professor</a>
                 <a href="{{ route('feriados') }}" class="hover:text-gray-300 {{ request()->routeIs('feriados') ? 'text-blue-400 font-bold' : '' }}">Feriados</a>
-                <a href="{{ route('profile') }}" class="hover:text-gray-300 {{ request()->routeIs('profile') ? 'text-blue-400 font-bold' : '' }}">Perfil
+                <a href="{{ route('profile') }}" class="hover:text-gray-300 {{ request()->routeIs('profile') ? 'text-blue-400 font-bold' : '' }}">Perfil</a>
+                <a href="{{ route('turma') }}" class="hover:text-gray-300 {{ request()->routeIs('turma') ? 'text-blue-400 font-bold' : '' }}">Turma</a>
+                    
+                </a>
                 </a>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
