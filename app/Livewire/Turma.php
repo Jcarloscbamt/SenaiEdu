@@ -46,7 +46,7 @@ class Turma extends Component
             'data' => $this->data,
         ]);
 
-        session()->flash('message', 'Feriado criado com sucesso!');
+        session()->flash('message', 'Turma criado com sucesso!');
         $this->limparCampos();
         $this->carregaTurmas();
     }
