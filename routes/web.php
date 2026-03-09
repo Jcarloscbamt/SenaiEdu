@@ -2,13 +2,16 @@
 
 use App\Livewire\Colaborador;
 use App\Livewire\ColaboradorCargo;
+use App\Livewire\Disciplina;
+use App\Livewire\DisciplinaDI;
 use App\Livewire\Home;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Professor;
 Use App\Livewire\Feriados;
- use App\Livewire\Turma;
+Use App\Livewire\Turma;
+
 //Meu primeiro contato com GitHub
 
 // oi
@@ -49,10 +52,13 @@ Route::get('/professor', Professor::class)
     ->middleware('auth')
     ->name('feriados');
 
-  Route::get('/turma', Turma::class)
+Route::get('/turma', Turma::class)
     ->middleware('auth')
     ->name('turma');
 
+Route::get('/disciplina', DisciplinaDI::class)
+    ->middleware('auth')
+    ->name('disciplina');
 
 
 require __DIR__.'/auth.php';
