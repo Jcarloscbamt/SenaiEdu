@@ -13,9 +13,4 @@ class Professor extends Model
 
     protected $fillable = ['nome', 'cpf', 'email', 'telefone', 'data_nascimento', 'cargo_id'];
 
-    // Relacionamento: Um colaborador pertence a um cargo
-    public function cargo()
-    {
-        return $this->belongsTo(Cargo::class);
-    }
 }

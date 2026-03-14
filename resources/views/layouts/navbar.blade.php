@@ -25,7 +25,6 @@
 
                 @auth
                     <a href="{{ route('professor') }}" class="{{ request()->routeIs('professor') ? 'font-bold' : '' }}">Professor</a>
-                    <a href="{{ route('feriados') }}" class="{{ request()->routeIs('feriados') ? 'font-bold' : '' }}">Feriados</a>
                     <a href="{{ route('turma') }}" class="{{ request()->routeIs('turma') ? 'font-bold' : '' }}">Turma</a>
                     <a href="{{ route('disciplina') }}" class="{{ request()->routeIs('disciplina') ? 'font-bold' : '' }}">Disciplina</a>
                     <a href="{{ route('profile') }}" class="{{ request()->routeIs('profile') ? 'font-bold' : '' }}">Perfil</a>
@@ -55,7 +54,6 @@
             <a href="{{ route('colaboradores') }}" class="{{ request()->routeIs('colaboradores') ? 'font-bold' : '' }}">Colaboradores</a>
             <a href="{{ route('cargos') }}" class="{{ request()->routeIs('cargos') ? 'font-bold' : '' }}">Cargos</a>
             <a href="{{ route('professor') }}" class="{{ request()->routeIs('professor') ? 'font-bold' : '' }}">Professor</a>
-            <a href="{{ route('feriados') }}" class="{{ request()->routeIs('feriados') ? 'font-bold' : '' }}">Feriados</a>
             <a href="{{ route('profile') }}" class="{{ request()->routeIs('profile') ? 'font-bold' : '' }}">Perfil</a>
             <a href="{{ route('turma') }}" class="{{ request()->routeIs('turma') ? 'font-bold' : '' }}">Turma</a>
 

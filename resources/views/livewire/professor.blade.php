@@ -20,7 +20,7 @@
             @enderror
         </div>
 
-                <div>
+        <div>
             <input type="text"
                    wire:model="cpf"
                    maxlength="11"
@@ -63,18 +63,6 @@
             @enderror
         </div>
 
-        <div>
-            <select wire:model="cargo_id"
-                    class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 @error('cargo_id') border-red-500 @enderror">
-                <option value="">Selecione o cargo</option>
-                @foreach($cargos as $cargo)
-                    <option value="{{ $cargo->id }}">{{ $cargo->nome }}</option>
-                @endforeach
-            </select>
-            @error('cargo_id') 
-                <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
-            @enderror
-        </div>
 
         <div class="flex items-center gap-3">
             <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
@@ -103,7 +91,7 @@
                     <th class="p-3 border-b">Cpf</th>
                     <th class="p-3 border-b">Email</th>
                     <th class="p-3 border-b">Telefone</th>
-                    <th class="p-3 border-b">Cargo</th>
+                    
                     <th class="p-3 border-b">Ações</th>
                 </tr>
             </thead>
@@ -115,7 +103,7 @@
                         <td class="p-3">{{ $colaborador->cpf }}</td>
                         <td class="p-3">{{ $colaborador->email }}</td>
                         <td class="p-3">{{ $colaborador->telefone }}</td>
-                        <td class="p-3">{{ $colaborador->cargo->nome ?? '' }}</td>
+                        
                         
                         <td class="p-3 flex items-center gap-2">
                             <button wire:click="edit({{ $colaborador->id }})"
